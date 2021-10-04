@@ -42,7 +42,7 @@ class Card3 extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Icon(Icons.book, color: Colors.white, size: 40),
+                  const Icon(Icons.star, color: Colors.yellow, size: 40),
                   const SizedBox(height: 8),
                   Text(tip.title,
                       style:BFaceTheme.darkTextTheme.headline2),
