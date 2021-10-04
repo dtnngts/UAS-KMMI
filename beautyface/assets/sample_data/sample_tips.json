@@ -1,0 +1,26 @@
+
+{
+    "tips": [
+        {
+            "dishImage": "assets/makeup_pics/wardah.jpg",
+            "title": "Wardah Lightening Serum",
+            "harga": "51k"
+        },
+        {
+            "dishImage": "assets/makeup_pics/niacin.jpeg",
+            "title": "Something Niacinemide Serum",
+            "harga": "Rp. 152k,-"
+            
+        },
+        {
+            "dishImage": "assets/makeup_pics/.garnierjpg",
+            "title": "Garnier Vit C Serum",
+            "harga": "92k"
+        },
+        {
+            "dishImage": "assets/makeup_pics/azarine.jpg",
+            "title": "Lipstick",
+            "harga": "Rp. 70.000,-"
+        }
+    ]
+}

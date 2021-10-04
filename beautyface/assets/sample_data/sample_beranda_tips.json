@@ -1,0 +1,51 @@
+{
+    "beranda": [
+        {
+            "cardType": "card1",
+            "title": "Bersama Melawan Malas",
+            "subtitle": "Mask Men",
+            "backgroundImage": "assets/magazine_pics/masker.jpg",
+            "message": "Perfct Choice's",
+            "authorName": "Ken Rich",
+            "role": "Founder of Raywenderlich",
+            "authorImage": "assets/profile_pics/person_ray.jpeg",
+            "tags": ""
+            
+        },
+        {
+            "cardType": "card2",
+            "title": "Great!",
+            "subtitle": "Face Wash",
+            "backgroundImage": "assets/magazine_pics/card_smoothie.jpg",
+            "message": "Much Tasty, Wow Smooth, Oh Nutty",
+            "authorName": "Swan Lish"
+        },
+        {
+            "cardType": "card1",
+            "title": "Great Condition",
+            "subtitle": "Healthy Skin",
+            "backgroundImage": "assets/magazine_pics/face.jpg",
+            "message": "Facial Wash for Everyone",
+            "authorName": "Rins Gres",
+            "role": "Author at RW",
+            "profileImage": "",
+            "durationInMinutes": 15,
+            "tags": []
+           
+        },
+        {
+            "cardType": "card3",
+            "title": "Beauty Trends",
+            "subtitle": "",
+            "backgroundImage": "assets/magazine_pics/paket.jpg",
+            "message": "Trends of what people are making",
+            "chef": "",
+            "role": "",
+            "tags": ["Healthy", "Skin", "Acne", "Normal","Oily"],
+            "description": null,
+            "source": null,
+            "tools": null,
+            "cara": null
+        }
+    ]
+}

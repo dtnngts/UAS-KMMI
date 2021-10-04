@@ -1,0 +1,67 @@
+import 'package:flutter/material.dart';
+import 'screens/beranda_screen.dart';
+import 'screens/tip_screen.dart';
+import 'package:provider/provider.dart';
+import 'models/models.dart';
+import 'screens/search_screen.dart';
+
+class Home extends StatefulWidget {
+  const Home({Key key}) : super(key: key);
+
+  @override
+  _HomeState createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  // int _selectedIndex = 0;
+
+  static List<Widget> pages = <Widget>[
+    BerandaScreen(),
+    TipsScreen()
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer<TabManager>(
+      builder: (context, tabManager, child) {
+        return Scaffold(
+          appBar: AppBar(
+            title: Text('Beauty Face',
+                style: Theme.of(context).textTheme.headline6,
+          ),
+          actions: [
+            IconButton(
+                onPressed: () {
+                  showSearch(context: context, delegate: Search());
+                },
+                icon: Icon(Icons.search))
+          ],
+        ),
+          // 2
+          body: pages[tabManager.selectedTab],
+          bottomNavigationBar: BottomNavigationBar(
+            selectedItemColor:
+                Theme.of(context).textSelectionTheme.selectionColor,
+            // 3
+            currentIndex: tabManager.selectedTab,
+            onTap: (index) {
+              // 4
+              tabManager.goToTab(index);
+            },
+            items: <BottomNavigationBarItem>[
+              const BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                label: 'Beranda',
+              ),
+              const BottomNavigationBarItem(
+                icon: Icon(Icons.list),
+                label: 'Tips',
+              ),
+            
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
